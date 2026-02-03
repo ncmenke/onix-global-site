@@ -45,22 +45,16 @@
 </head>
   <body>
 
-    <!-- Static Netlify-detectable form: Netlify will scan for this at build time -->
-    <form name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="glass-panel" style="max-width:380px;margin:1rem;padding:1rem;border-radius:8px;">
-      <!-- Required hidden input so Netlify knows the form name -->
+    <div id="root"></div>
+
+    <!-- Hidden static Netlify-detectable form: keeps your React UI as the single visible input but lets Netlify detect the form at build time -->
+    <form name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+          style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;" aria-hidden="true">
       <input type="hidden" name="form-name" value="newsletter" />
-      <!-- Honeypot field (hidden from users) -->
-      <p style="display:none">
-        <label>Don’t fill this out: <input name="bot-field" /></label>
-      </p>
-      <label style="display:block;margin-bottom:0.5rem;">
-        Email
-        <input type="email" name="email" required placeholder="you@example.com" style="width:100%;padding:0.5rem;margin-top:0.25rem;border-radius:6px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:inherit" />
-      </label>
-      <p style="margin:0"><button type="submit" style="padding:0.5rem 1rem;border-radius:6px;background:#fff;color:#000;border:none;cursor:pointer">Subscribe</button></p>
+      <p style="display:none"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+      <input type="email" name="email" />
     </form>
 
-    <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
