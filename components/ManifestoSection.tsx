@@ -12,7 +12,7 @@ const ManifestoSection: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-9xl font-black tracking-tighter text-white uppercase"
+            className="text-4xl md:text-9xl font-black tracking-tighter text-white uppercase"
         >
             Total<br/>Independence.
         </motion.h2>

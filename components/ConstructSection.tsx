@@ -37,7 +37,7 @@ const ConstructSection: React.FC = () => {
                     <Anchor size={12} />
                     <span>The Construct</span>
                 </div>
-                <h2 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] text-black">
+                <h2 className="text-4xl md:text-8xl font-black tracking-tighter leading-[0.9] text-black">
                     WE PRINT<br/>CIVILIZATIONS.
                 </h2>
             </div>
